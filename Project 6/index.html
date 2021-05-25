@@ -17,7 +17,7 @@
         <img id="cloud2" src="/img/cloud2.png" alt="">
         <img id="aviao" src="/img/aviao2.png" alt="">
         <div id="tree"></div>
-        <h2 id="text">Bem- Vindos</h2>
+        <h2 id="text">Anoiteceu Azul</h2>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
@@ -41,6 +41,40 @@
                 scrub: 1
             },
             scale: 1.1,
+            y: -500,
+            x: 2200
+        })
+
+        gsap.to('#tree', {
+            scrollTrigger: {
+                scrub: 1
+            },
+
+            x: -500
+        })
+        gsap.to('#cloud1', {
+            scrollTrigger: {
+                scrub: 1
+            },
+
+            x: -200
+        })
+
+        gsap.to('#cloud2', {
+            scrollTrigger: {
+                scrub: 1
+            },
+
+            x: 200
+        })
+
+
+        gsap.to('#text', {
+            scrollTrigger: {
+                scrub: 1
+            },
+
+            y: -800
         })
     </script>
 </body>
