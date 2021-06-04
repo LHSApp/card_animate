@@ -50,8 +50,8 @@ var idade = 32;
 var sobrenome = 'Santos';
 var nomeCompleto = `${nome} ${sobrenome}`;
 // Coloque a seguinte frase em uma variável: It's time
+var frase = `It's time`
+    // Verifique o tipo da variável que contém o seu nome
+var verificarTipoNome = typeof nome;
 
-// Verifique o tipo da variável que contém o seu nome
-
-
-console.log(typeof nome, ano, idade, nomeCompleto)
+console.log(verificarTipoNome)
