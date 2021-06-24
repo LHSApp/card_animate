@@ -75,8 +75,33 @@ console.log(terceiraIdade('oi'));
 
 
 /*Escopo*/
+var totalPaises = 193;
 
 function faltaVisitar(paisesVisitados) {
-
-
+    return `Falta visitar ${totalPaises - paisesVisitados} paises`
 }
+
+console.log(totalPaises);
+
+
+
+
+
+/*Escopo Léxico */
+
+var profissao = 'Progamador'
+
+function dados() {
+    var nome = 'Leandro';
+    var idade = 28;
+
+    function outrosDados() {
+
+        var endereco = 'São Paulo';
+        var idade = 33;
+        return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+    }
+    return outrosDados();
+}
+
+console.log(dados());
