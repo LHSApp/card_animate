@@ -41,3 +41,42 @@ addEventListener('click', function() {
 
     console.log('Oi');
 });
+
+
+
+function imc2(peso, altura) {
+    const imc = peso / (altura ** 2);
+    console.log(imc);
+}
+
+imc2(80, 1.8); // undefined
+
+console.log(imc2(80, 1.80));
+
+
+/* Valores retornados*/
+function terceiraIdade(idade) {
+    if (typeof idade !== 'number') {
+        return 'Por favor preencha um número'
+
+    } else if (idade >= 80) {
+        /* console.log('É idoso');*/
+        return true;
+    } else {
+        return false;
+    }
+    console.log(idade)
+}
+console.log(terceiraIdade('oi'));
+
+
+
+
+
+
+/*Escopo*/
+
+function faltaVisitar(paisesVisitados) {
+
+
+}
