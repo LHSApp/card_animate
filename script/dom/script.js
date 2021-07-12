@@ -35,3 +35,7 @@ console.log(elementoAtivo);
 const linguagem = window.navigator.language;
 console.log(linguagem);
 // Retorne a largura da janela
+
+const larguraPagina = window.innerWidth;
+
+console.log(larguraPagina);
