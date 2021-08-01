@@ -1,10 +1,30 @@
 const menu = document.querySelector('.menu');
+menu.classList.add('ativo', 'teste');
+menu.classList.remove('azul');
+//menu.classList.toggle('azul');
 
-menu.className; // string
-menu.classList; // lista de classes
-menu.classList.add('ativo');
-menu.classList.add('ativo', 'mobile'); // duas classes
-menu.classList.remove('ativo');
-menu.classList.toggle('ativo'); // adiciona/remove a classe
-menu.classList.contains('ativo'); // true ou false
-menu.classList.replace('ativo', 'inativo');
+
+if (menu.classList.contains('azul')) {
+
+    menu.classList.add('possui-azul');
+
+} else {
+    menu.classList.add('nao-possui-azul');
+
+}
+
+
+menu.className += ' vermelho'
+
+console.log(menu.className);
+//console.log(menu.classList[1]);
+
+
+const animais = document.querySelector('.animais');
+
+console.log(animais.attributes.id);
+
+
+const img = document.querySelector('img');
+
+console.log(img.getAttribute('src'));
