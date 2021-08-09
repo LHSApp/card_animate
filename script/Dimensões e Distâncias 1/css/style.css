@@ -54,6 +54,13 @@ body {
     font-size: 0.875rem;
 }
 
+.menu-mobile {
+    grid-column: 3 / 5;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: rgb(205, 38, 146)
+}
+
 .grid-section {
     grid-column: 2 / 4;
     width: 100%;
