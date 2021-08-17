@@ -1,6 +1,23 @@
+//callback
+//const img = document.querySelector('img');
+
+//function callback() {
+
+//console.log('clicou')
+//}
+
+
+//img.addEventListener('click', callback);
+
+
+//Event
+
 const img = document.querySelector('img');
 
-img.addEventListener('click', function() {
+function callback(event) {
 
-    console.log('clicou')
-})
+    console.log(event)
+}
+
+
+img.addEventListener('click', callback);
